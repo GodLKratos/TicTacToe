@@ -1,0 +1,197 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;  
+    text-align: center;
+    background-color: rgb(139, 108, 167);
+}
+.nav h1{
+    margin: 10px;
+    color: greenyellow;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.turn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid red;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    
+}
+
+
+.turn .turnX{
+    border: 2px solid white;
+    width: 100px;
+    height: 45px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 1px;
+    font-size: 25px;
+
+}
+
+.turn .turn0{
+    border: 2px solid white;
+    width: 100px;
+    height: 45px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.toggle{
+    background-color: rgb(58, 251, 51);
+}
+
+.gameboard{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: center;
+    margin-top: 20px;
+    background-image: url(data/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cell{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align:center;
+    font-size: 100px;
+}
+
+.cell1 , .cell4 , .cell7{
+    border-left: none;
+}
+.cell1 , .cell2 , .cell3{
+    border-top: none;
+}
+.cell3 , .cell6 , .cell9{
+    border-right: none;
+}
+.cell7 , .cell8 , .cell9{
+    border-bottom: none;
+}
+
+.startgame{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgb(18, 118, 206);
+    background-image: url(data/ttt.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+.hide{
+    display: none;
+}
+
+.startbutton{
+    position: absolute;
+    right: 200px;
+    top: 350px;
+    width: 200px;
+    height: 100px;
+    background-image: url(data/start.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+}
+
+.choose{
+    position: fixed;
+    top: 100px;
+    left: 300px;
+    background-color: rgb(255, 196, 0);
+    height: 400px;
+    width: 900px;
+    border-radius: 10px;
+}
+.choose h1{
+    text-align: center;
+    background: linear-gradient(90deg,red,blue,yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 80px;
+
+}
+
+.choose_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cX{
+    margin: 100px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(75, 238, 60);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+.c0{
+    margin: 100px;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(75, 238, 60);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+.win{
+    position: fixed;
+    top: 100px;
+    left: 300px;
+    background-color: rgb(17, 255, 0);
+    height: 400px;
+    width: 900px;
+    border-radius: 10px;
+    opacity: 0.6;
+}
+
+.restart{
+    position: absolute;
+    top: 200px;
+    left: 350px;
+    width: 200px;
+    height: 50px;
+    background-color: antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: brown;
+}
+
+.tell{
+    text-align: center;
+    margin: 40px;
+    font-size: 50px;
+}
